@@ -1,0 +1,43 @@
+server:
+  port: 8080
+#  error:
+#    whitelabel:
+#      enabled: false
+
+clientAddr: http://localhost:4200/
+
+spring:
+  datasource:
+    #    url: jdbc:postgresql://localhost:5432/ssq
+    url: jdbc:postgresql://database-1.cog31bemqyld.eu-central-1.rds.amazonaws.com:5432/postgres
+    username: NewDataBase
+    password: password123
+  jpa:
+    show-sql: false
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      dialect: org.hibernate.dialect.PostgreSQL94Dialect
+  jackson:
+    serialization:
+      fail-on-empty-beans: false
+  #  throw exception if an exception handler is not predefined, so that it will not show the white board from spring
+#  mvc:
+#    throw-exception-if-no-handler-found: true
+#  web:
+#    resources:
+#      add-mappings: false
+
+cloud:
+  aws:
+    credentials:
+      access-key: AKIAT2KJ2PXMJLCLPAPB
+      secret-key: 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
+    region:
+      static: eu-central-1
+    stack:
+      auto: false
+
+application:
+  bucket:
+    name: trackrecorddev
