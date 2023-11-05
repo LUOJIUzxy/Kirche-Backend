@@ -1,6 +1,5 @@
 package com.ssq.invoice.model.dao;
 
-import com.ssq.invoice.constant.ContactRole;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
