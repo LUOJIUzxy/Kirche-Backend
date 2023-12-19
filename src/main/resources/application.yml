@@ -10,8 +10,8 @@ spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/ssq
     #url: jdbc:postgresql://database-1.cog31bemqyld.eu-central-1.rds.amazonaws.com:5432/postgres
-    username: NewDataBase
-    password: password123
+    username: postgres
+    password: password
   jpa:
     show-sql: false
     hibernate:
